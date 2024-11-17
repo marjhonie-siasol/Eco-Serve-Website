@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@
     color: var(--green);
     padding-left: 1rem;
     border-left: .4rem solid var(--green);
-    margin-top: 1rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
 }
 
@@ -134,11 +135,40 @@ html {
     color: yellow;
 }
 
+.header-2 .share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-2 .share span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header-2 .share a {
+    font-size: 20px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.header-2 .share a:hover {
+    color: #FAB005;
+}
+
 .header-3 {
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     position: relative;
     z-index: 1000;
+}
+
+.header-3 .nav-bar a.active {
+    border-bottom: .3rem solid #FAB005;
+    transition: border-bottom 3;
+    color: var(--green);
+    font-weight: 700;
 }
 
 .header-3 .nav-bar a {
@@ -149,10 +179,9 @@ html {
 }
 
 .header-3 .nav-bar a:hover {
-    border-bottom: .2rem solid var(--green);
-    transition: border-bottom 3;
-    color: var(--green);
-    font-weight: 300;
+    color: #FAB005;
+    font-weight: 700;
+
 }
 
 .header-3 .icons a {
@@ -320,6 +349,7 @@ html {
 
 .header-3 .cart-items-container .cart-item img {
     height: 7rem;
+
 }
 
 .header-3 .cart-items-container .cart-item .content h3 {
@@ -367,22 +397,22 @@ html {
 .Home .home-slider .box .content span {
     font-size: 3rem;
     color: #ffffff;
-    text-shadow: 
-    0.5px 0.5px 0 #000000, 
-    -0.5px -0.5px 0 #000000,  
-    0.5px -0.5px 0 #000000, 
-    -0.5px 0.5px 0 #000000;
-    
+    text-shadow:
+        0.5px 0.5px 0 #000000,
+        -0.5px -0.5px 0 #000000,
+        0.5px -0.5px 0 #000000,
+        -0.5px 0.5px 0 #000000;
+
 }
 
 .Home .home-slider .box .content h3 {
     font-size: 6rem;
     color: #ffffff;
     padding: .5rem;
-    text-shadow: 
-        0.5px 0.5px 0 #000000, 
-        -0.5px -0.5px 0 #000000,  
-        0.5px -0.5px 0 #000000, 
+    text-shadow:
+        0.5px 0.5px 0 #000000,
+        -0.5px -0.5px 0 #000000,
+        0.5px -0.5px 0 #000000,
         -0.5px 0.5px 0 #000000;
 }
 
@@ -410,10 +440,12 @@ html {
     height: 100%;
     width: 100%;
     object-fit: cover;
+
 }
 
 .banner-container .banner:hover img {
     transform: scale(1.2);
+
 }
 
 .banner-container .banner .content {
@@ -426,21 +458,21 @@ html {
 .banner-container .banner .content span {
     color: #ffdb3a;
     font-size: 1.7rem;
-    text-shadow: 
-        0.5px 0.5px 0 #000000, 
-        -0.5px -0.5px 0 #000000,  
-        0.5px -0.5px 0 #000000, 
+    text-shadow:
+        0.5px 0.5px 0 #000000,
+        -0.5px -0.5px 0 #000000,
+        0.5px -0.5px 0 #000000,
         -0.5px 0.5px 0 #000000;
 }
 
 .banner-container .banner .content h3 {
     color: #ffffff;
     font-size: 3rem;
-    text-shadow: 
-    0.5px 0.5px 0 #000000, 
-    -0.5px -0.5px 0 #000000,  
-    0.5px -0.5px 0 #000000, 
-    -0.5px 0.5px 0 #000000;
+    text-shadow:
+        0.5px 0.5px 0 #000000,
+        -0.5px -0.5px 0 #000000,
+        0.5px -0.5px 0 #000000,
+        -0.5px 0.5px 0 #000000;
 }
 
 
@@ -471,6 +503,7 @@ html {
 
 .Category .box-container .box:hover img {
     transform: scale(1.2);
+
 }
 
 .Category .box-container .box .content {
@@ -506,6 +539,10 @@ html {
     gap: 2rem;
 }
 
+.product .product-flex {
+    display: flex;
+}
+
 .product .box-container .box {
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
@@ -521,6 +558,7 @@ html {
     width: 100%;
     border-bottom: .05rem solid gray;
     object-fit: cover;
+
 }
 
 .product .box-container .box .discount {
@@ -859,20 +897,28 @@ html {
 }
 
 @media(max-width:991px) {
+
     .header-1,
     .header-2,
     .header-3 {
         padding: 2rem;
     }
+
     section {
         padding: 1.5rem;
     }
 }
 
 @media(max-width:768px) {
+
+    .header-2 .share {
+        display: none;
+    }
+
     #menu-bar {
         display: initial;
     }
+
     .header-3 .nav-bar {
         position: absolute;
         top: 100%;
@@ -881,34 +927,48 @@ html {
         background: rgba(179, 178, 178, 0.475);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
+
+    .header-3 .nav-bar a.active {
+        color: #ffffff;
+        font-weight: 700;
+        background-color: var(--green);
+    }
+
     .header-3 .nav-bar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
     }
+
     .header-3 .nav-bar a {
         color: #fff;
         display: block;
-        margin: 1.5rem 0;
+        margin: 0.5rem 0;
         padding: 1.5rem;
         border-radius: .5rem;
-        background: rgba(74, 73, 73, 0.51);
+        background: rgba(48, 48, 48, 0.51);
         text-align: center;
     }
+
     .header-3 .nav-bar a:hover {
         background: rgba(0, 128, 0, 0.501);
         color: white;
     }
+
     .header-2 {
         flex-flow: column;
     }
+
     .header-2 .serach-bar-container {
         width: 100%;
         margin-top: 2rem;
     }
+
     .Home .home-slider .box {
         background-position: right !important;
         z-index: 0;
         padding-right: 5rem;
     }
+
     .Home .home-slider .box::before {
         position: absolute;
         top: 0;
@@ -919,6 +979,7 @@ html {
         z-index: -1;
         background: rgba(255, 255, 255, 0.415);
     }
+
     .Home .home-slider .box .content h3 {
         font-size: 4.5rem;
     }
@@ -928,16 +989,20 @@ html {
     html {
         font-size: 50%;
     }
+
     .header-1 {
         display: none;
     }
+
     .deal .row .content .count-down .box {
         width: 7rem;
     }
+
     .deal .row .content .count-down .box h3 {
         font-size: 3rem;
         padding: .5rem 0;
     }
+
     .deal .row .content .count-down .box span {
         font-size: 1.5rem;
     }
