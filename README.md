@@ -1,6 +1,6 @@
 # 🌿 Eco-Serve Website Application (Beginner Friendly Front-End)
 
-Welcome to the **Eco-Serve Website** repository! This project is a simple, static e-commerce website designed for a plant shop. 
+Welcome to the **Eco-Serve** repository! This project is a simple, static e-commerce website designed for a plant shop. 
 
 This repository is built entirely with **pure HTML, CSS, and Vanilla JavaScript (No Frameworks)**. It is the perfect starting point for beginners who want to explore web development, practice CSS styling, or understand basic JavaScript DOM manipulation.
 
