@@ -40,4 +40,4 @@ Because this is a static site without any frameworks, getting it running locally
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/marjhonie-siasol/Eco-Serve-Website.git
+   git clone https://github.com/marjhonie-siasol/EcoServe-WebApp.git
