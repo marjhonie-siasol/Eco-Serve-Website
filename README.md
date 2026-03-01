@@ -1,4 +1,4 @@
-# 🌿 Eco-Serve Website (Beginner Friendly Front-End)
+# 🌿 Eco-Serve Website Application (Beginner Friendly Front-End)
 
 Welcome to the **Eco-Serve Website** repository! This project is a simple, static e-commerce website designed for a plant shop. 
 
